@@ -21,8 +21,7 @@ public class HandleDropDownWithoutSelectClassUsingMethod {
 
 		//For Selecting "Product Type" from dropdown
 		driver.findElement(By.xpath("//div[@class='drp1']//div[@class='dropdown']")).click();
-		List<WebElement> productTypeOptions = driver
-				.findElements(By.xpath("//ul[@class='dropdown1 dropdown-menu']//li"));
+		List<WebElement> productTypeOptions = driver.findElements(By.xpath("//ul[@class='dropdown1 dropdown-menu']//li"));
 		System.out.println("All the Product Type options: " + productTypeOptions.size());
 
 		selectOptionFromDropDown(productTypeOptions, "Vehicle Insurance"); //Calling the method
