@@ -29,7 +29,8 @@ public class AutoCompleteGooglePlaceDropDown {
 			locationSearchBox.sendKeys(Keys.ARROW_DOWN);
 			text = locationSearchBox.getAttribute("value");
 
-			if (text.equals("Barisal District, Bangladesh")) {
+			if (text.equals("Barisal District, Bangladesh")) 
+			{
 				locationSearchBox.sendKeys(Keys.ENTER);
 				break;
 			}

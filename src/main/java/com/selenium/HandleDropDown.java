@@ -17,15 +17,15 @@ public class HandleDropDown {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 
-		driver.get("https://www.opencart.com/index.php?route=account/register");
+		driver.get("https://www.orangehrm.com/en/hris-hr-software-demo/");
 
-		WebElement countryDrpDwnEle = driver.findElement(By.id("input-country"));
+		WebElement countryDrpDwnEle = driver.findElement(By.id("Form_getForm_Country"));
 
 		Select countryDrpDwn = new Select(countryDrpDwnEle);
 
 		/*
 		countryDrpDwn.selectByVisibleText("Bangladesh"); //using selectByVisibleText()
-		countryDrpDwn.selectByValue("18");              //using selectByValue()
+		countryDrpDwn.selectByValue("Bangladesh");              //using selectByValue()
 		countryDrpDwn.selectByIndex(18);                //using slectByIndex()
 		*/
 

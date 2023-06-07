@@ -1,5 +1,6 @@
 package com.selenium;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -24,8 +25,8 @@ public class HandleJQueryDropDown {
 		//selectChoiceValues(driver, "choice 1", "choice 2", "choice 2 2", "choice 6 2", "choice 6 2 3", "choice 7");
 		selectChoiceValues(driver, "all");
 		
-		
-		Thread.sleep(5000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		//Thread.sleep(5000);
 		driver.close();
 		
 

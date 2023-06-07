@@ -34,7 +34,7 @@ public class getTextVsgetAttribute {
 																								// attributes value
 
 		System.out.println("Result from getText(): " + emailBox.getText()); // This will get nothing because for the
-																			// particular element there is no inner text
+																			// particular element there is no inner text,
 																			// getText() only get inner text from an
 																			// element
 		WebElement loginButton = driver.findElement(By.xpath("//button[contains(text(),'Log in')]"));

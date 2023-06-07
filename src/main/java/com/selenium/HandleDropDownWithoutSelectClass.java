@@ -21,7 +21,7 @@ public class HandleDropDownWithoutSelectClass {
 		//For Selecting "Product Type" from dropdown
 		driver.findElement(By.xpath("//div[@class='drp1']//div[@class='dropdown']")).click();
 		List<WebElement> productTypeOptions=driver.findElements(By.xpath("//ul[@class='dropdown1 dropdown-menu']//li"));
-		System.out.println("All the Product Type options: "+productTypeOptions.size());
+		System.out.println("Total Product Type options: "+productTypeOptions.size());
 		
 		for(WebElement Option:productTypeOptions)
 		{

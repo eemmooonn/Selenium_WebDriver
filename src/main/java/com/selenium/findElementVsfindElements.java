@@ -25,7 +25,7 @@ public class findElementVsfindElements {
 		WebElement searchButton = driver.findElement(By.xpath("//button[contains(text(),'SEARCH')]"));
 		searchButton.click();
 
-		WebElement elem = driver.findElement(By.xpath("//div[@class='drz-footer-inner']//h3")); // This xpath is for
+		WebElement elem = driver.findElement(By.xpath("//div[@class='drz-footer-inner']//li[@class='footer-li']")); // This xpath is for
 																								// multiple elements,
 																								// but it will capture
 																								// only first element
@@ -39,9 +39,9 @@ public class findElementVsfindElements {
 		 * System.out.println("Element text is: "+elemException.getText());
 		 */
 
-		// findElemts() --> Return multiple WebElement
+		// findElements() --> Return multiple WebElement
 
-		List<WebElement> elements = driver.findElements(By.xpath("//div[@class='drz-footer-inner']//h3"));
+		List<WebElement> elements = driver.findElements(By.xpath("//div[@class='drz-footer-inner']//li[@class='footer-li']"));
 		System.out.println("Number of WebElements: " + elements.size());
 
 		for (WebElement ele : elements) {

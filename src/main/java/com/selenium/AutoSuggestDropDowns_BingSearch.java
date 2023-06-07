@@ -21,8 +21,7 @@ public class AutoSuggestDropDowns_BingSearch {
 
 		Thread.sleep(2000);
 
-		List<WebElement> suggestionList = driver
-				.findElements(By.xpath("//div[@class='sa_tm']//span[@class='sa_tm_text']"));
+		List<WebElement> suggestionList = driver.findElements(By.xpath("//div[@class='sa_tm']//span[@class='sa_tm_text']"));
 
 		System.out.println("Number of Suggestions: " + suggestionList.size());
 
