@@ -1,4 +1,5 @@
 {
     "editor.comments.ignoreEmptyLines": true,
-    "java.format.comments.enabled": false
+    "java.format.comments.enabled": false,
+    "java.compile.nullAnalysis.mode": "disabled"
 }
