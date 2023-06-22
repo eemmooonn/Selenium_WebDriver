@@ -17,11 +17,11 @@ public class Inner_iframe {
 
         driver.findElement(By.xpath("//a[contains(text(),'Iframe with in an Iframe')]")).click();
 
-        // <-----Switch to outer frame----->
+        // <-----Switch to outer iframe----->
         WebElement outerFrame = driver.findElement(By.xpath("//*[@id='Multiple']/iframe"));
         driver.switchTo().frame(outerFrame); //Assigned frame as a WebElement
 
-        // <-----Switch to inner frame----->
+        // <-----Switch to inner iframe----->
         WebElement innerFrame = driver.findElement(By.xpath("/html/body/section/div/div/iframe"));
         driver.switchTo().frame(innerFrame);
 
