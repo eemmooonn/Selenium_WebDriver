@@ -14,6 +14,8 @@ public class iframe {
         
         driver.get("https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html");
 
+        //<-----We Can use iframe methods for - "frame" or "form" these are refers to iframe----->
+
         // <-----1st iframe----->
         driver.switchTo().frame("packageListFrame"); // Here "name" of the frame is "packageListFrame" or we can use "id" if available
                                                               // or we can pass Web Element or Index of a iframe
