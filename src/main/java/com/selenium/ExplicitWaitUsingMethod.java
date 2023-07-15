@@ -1,6 +1,5 @@
 package com.selenium;
 
-import java.net.URL;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
